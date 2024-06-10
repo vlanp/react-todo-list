@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 // VARIABLE
+$violet: #5c47d2;
 
 // GENERAL
 
@@ -19,8 +20,89 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.dark {
+  background-color: gray;
+  height: 100vh;
+}
+
 // HEADER
 
+header {
+  padding: 2rem;
+  border-bottom: 1px solid lightgray;
+  div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .header-icon {
+    font-size: 5rem;
+    color: $violet;
+    font-weight: bold;
+  }
+}
+
 // MAIN
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.task {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-task-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.trash {
+  color: $violet;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.square {
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+.search-task {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  input {
+    width: 23rem;
+  }
+}
+
+.mode {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  input {
+    width: 23rem;
+  }
+}
 
 // FOOTER

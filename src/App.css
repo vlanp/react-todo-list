@@ -10,4 +10,83 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.dark {
+  background-color: gray;
+  height: 100vh;
+}
+
+header {
+  padding: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+header div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+header .header-icon {
+  font-size: 5rem;
+  color: #5c47d2;
+  font-weight: bold;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.task {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-task-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.trash {
+  color: #5c47d2;
+}
+.trash:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.square:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.search-task {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.search-task input {
+  width: 23rem;
+}
+
+.mode {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.mode input {
+  width: 23rem;
 }/*# sourceMappingURL=App.css.map */
